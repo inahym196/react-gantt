@@ -1,0 +1,167 @@
+
+
+/***************************************************
+    #chart-area > #member-area, #task-area
+***************************************************/
+#gantt-area{
+    background-color: white;
+    border-radius: 3px;
+    border-top: 3px solid #00d0ff;
+    display: flex;
+    flex-direction: column;
+}
+
+#chart-header{
+    display:flex;
+}
+
+#chart-area{
+    display: flex;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    /*position: relative;*/
+}
+
+#member-area {
+    margin-top: 30px;
+    padding-left: 0px;
+}
+
+#member-area li {
+    font-size: 10px;
+    height: 30px;
+    list-style: none;
+}
+
+#base-area {
+    position: relative;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#task-area {
+    padding: 0;
+    margin-top: 30px;
+    color: #777;
+}
+
+#crud-area {
+    width: 300px;
+    border-bottom: 1px solid #ccc;
+}
+
+/***************************************************
+    #base-area > #scale, ul#data
+***************************************************/
+
+#scale {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#scale ul {
+    padding:0;
+    margin:0;
+    height: 100%;
+}
+
+#scale li {
+    float: left;
+    list-style: none;
+    /* border-leftの線の太さを考慮して60 - 1する */
+    text-align: left;
+    color: #777;
+    font-size: 14px;
+    font-weight: lighter;
+    box-sizing: border-box;
+    border-left: 1px dashed #ccc;
+    height: 100%;
+}
+
+#task-area li {
+    line-height: 20px;
+    height: 30px;
+    display: block;
+    clear: both;
+    position: relative;
+    white-space: nowrap;
+}
+
+#timeline {
+    position: absolute;
+    background-color: #00d0ff;
+    width: 2px;
+    height: 100%;
+    opacity: 0.5;
+}
+
+/***************************************************
+    ul.data > #nameXX-task > span.bubble, span.bubble-span
+***************************************************/
+
+#task-area span {
+    position: absolute;
+}
+
+.bubble {
+    height: 15px;
+    float: left;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    opacity: 0.7;
+    background-color: #333;
+}
+
+.bubble-span {
+    bottom: 22px;
+    left: -7px;
+    font-size: 10px;
+}
+
+/***************************************************
+    #crud-area > #display-area > .details-(header,title,body)
+***************************************************/
+
+#display-area {
+    font-size: 15px;
+    border-radius: 2px;
+    border-top: 2px solid #00d0ff;
+}
+
+#display-area .details-header {
+    color: white;
+    background-color: #00d0ff;
+}
+
+#display-area .details-title {
+    padding: 5px 10px;
+    border-right: 2px solid #00d0ff;
+}
+
+#display-area .details-body {
+    padding: 10px;
+    font-weight: normal;
+    border-right: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+}
+
+#display-area form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#display-area label{
+    display: flex;
+    margin-bottom:10px;
+}
+
+#display-area input, select {
+    border:solid 1px #ccc;
+    color: #aaa;
+    box-sizing: border-box;
+    margin-left: auto;
+}

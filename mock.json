@@ -1,0 +1,174 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "inahym",
+      "position": "staff"
+    },
+    {
+      "id": 2,
+      "name": "userA",
+      "position": "staff"
+    },
+    {
+      "id": 3,
+      "name": "userB",
+      "position": "staff"
+    },
+    {
+      "id": 4,
+      "name": "userC",
+      "position": "staff"
+    },
+    {
+      "id": 5,
+      "name": "userD",
+      "position": "staff"
+    },
+    {
+      "id": 6,
+      "name": "userE",
+      "position": "staff"
+    },
+    {
+      "id": 7,
+      "name": "userF",
+      "position": "staff"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "operator": "inahym",
+      "startTime": "940",
+      "endTime": "1120",
+      "category": "answer"
+    },
+    {
+      "id": 2,
+      "operator": "inahym",
+      "startTime": "1100",
+      "endTime": "1230",
+      "category": "answer"
+    },
+    {
+      "id": 3,
+      "operator": "userB",
+      "startTime": "1300",
+      "endTime": "1340",
+      "category": "escalation"
+    },
+    {
+      "id": 4,
+      "operator": "userC",
+      "startTime": "1400",
+      "endTime": "1430",
+      "category": "interview"
+    },
+    {
+      "id": 5,
+      "operator": "userD",
+      "startTime": "1500",
+      "endTime": "1515",
+      "category": "interview"
+    },
+    {
+      "id": 6,
+      "operator": "userE",
+      "startTime": "1300",
+      "endTime": "1400",
+      "category": "receipt"
+    },
+    {
+      "id": 7,
+      "operator": "userF",
+      "startTime": "1100",
+      "endTime": "1200",
+      "category": "receipt"
+    },
+    {
+      "id": 8,
+      "operator": "userE",
+      "startTime": "1400",
+      "endTime": "1700",
+      "category": "prianswer"
+    },
+    {
+      "id": 9,
+      "operator": "userF",
+      "startTime": "1700",
+      "endTime": "1800",
+      "category": "prianswer"
+    },
+    {
+      "id": 10,
+      "operator": "userA",
+      "startTime": "930",
+      "endTime": "1010",
+      "category": "answer"
+    },
+    {
+      "id": 11,
+      "operator": "userA",
+      "startTime": "1020",
+      "endTime": "1055",
+      "category": "interview"
+    },
+    {
+      "id": 12,
+      "operator": "userA",
+      "startTime": "1100",
+      "endTime": "1125",
+      "category": "escalation"
+    },
+    {
+      "id": 13,
+      "operator": "userA",
+      "startTime": "1130",
+      "endTime": "1230",
+      "category": "break"
+    },
+    {
+      "id": 14,
+      "operator": "userB",
+      "startTime": "1130",
+      "endTime": "1230",
+      "category": "break"
+    },
+    {
+      "id": 15,
+      "operator": "userC",
+      "startTime": "1130",
+      "endTime": "1230",
+      "category": "break"
+    },
+    {
+      "id": 16,
+      "operator": "userD",
+      "startTime": "1230",
+      "endTime": "1330",
+      "category": "break"
+    },
+    {
+      "id": 17,
+      "operator": "inahym",
+      "startTime": "1230",
+      "endTime": "1330",
+      "category": "break"
+    },
+    {
+      "id": 18,
+      "operator": "userE",
+      "startTime": "1230",
+      "endTime": "1330",
+      "category": "break"
+    },
+    {
+      "id": 19,
+      "operator": "userF",
+      "startTime": "1230",
+      "endTime": "1330",
+      "category": "break"
+    }
+  ]
+}
