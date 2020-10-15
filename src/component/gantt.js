@@ -4,6 +4,7 @@ import Chart from './chart'
 import Crud from './crud'
 
 function GanttChart() {
+    console.log("< gantt >");
     return (
         <div id='gantt-area'>
             <Chart />

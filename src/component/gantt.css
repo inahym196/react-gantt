@@ -1,9 +1,8 @@
-
-
 /***************************************************
     #chart-area > #member-area, #task-area
 ***************************************************/
-#gantt-area{
+
+#gantt-area {
     background-color: white;
     border-radius: 3px;
     border-top: 3px solid #00d0ff;
@@ -11,11 +10,11 @@
     flex-direction: column;
 }
 
-#chart-header{
-    display:flex;
+#chart-header {
+    display: flex;
 }
 
-#chart-area{
+#chart-area {
     display: flex;
     border-top: 1px solid #bbb;
     border-bottom: 1px solid #ccc;
@@ -63,8 +62,8 @@
 }
 
 #scale ul {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     height: 100%;
 }
 
@@ -148,20 +147,77 @@
     border-bottom: 2px solid #eee;
 }
 
-#display-area form{
+#display-area form {
     padding: 10px;
     display: flex;
     flex-direction: column;
 }
 
-#display-area label{
+#display-area label {
     display: flex;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 #display-area input, select {
-    border:solid 1px #ccc;
+    border: solid 1px #ccc;
     color: #aaa;
     box-sizing: border-box;
     margin-left: auto;
+}
+
+/***************************************************
+    ul.data > #nameXX-task > span.bubble, span.bubble-span
+***************************************************/
+
+.data span {
+    position: absolute;
+}
+
+.bubble {
+    height: 15px;
+    float: left;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    opacity: 0.7;
+    background-color: #333;
+}
+
+.bubble-span {
+    bottom: 22px;
+    left: -7px;
+    font-size: 10px;
+}
+
+.bubble.break {
+    background-color: #2b8fef;
+}
+
+.bubble.receipt {
+    background-color: #13d604;
+}
+
+.bubble.answer {
+    background-color: #ffe74d;
+}
+
+.bubble.prianswer {
+    background-color: #8470ff;
+}
+
+.bubble.interview {
+    background-color: #ffc0cb;
+}
+
+.bubble.escalation {
+    background-color: #fc3232;
+}
+
+.bubble.other {
+    background-color: #a9a9a9;
+}
+
+.bubble:hover {
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
 }

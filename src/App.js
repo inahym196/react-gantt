@@ -4,13 +4,13 @@ import Clock from './component/clock';
 import GanttChart from './component/gantt';
 
 function App() {
+  console.log("< app >");
   return (
     <ReactApp>
       <AppHeader>
         <p>Test Web Site</p>
       </AppHeader>
       <AppBody>
-        <Clock />
         <h2>GanttChart</h2>
         <GanttChart />
       </AppBody>
