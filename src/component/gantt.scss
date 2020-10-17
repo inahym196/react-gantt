@@ -1,5 +1,36 @@
 /***************************************************
-    #chart-area > #member-area, #task-area
+    #AppHeader, #AppBody
+***************************************************/
+
+#AppHeader {
+    background-color: #282c34;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+#AppBody{
+    background-color: azure;
+}
+
+@media screen and (max-width:768px) {
+    #AppBody {
+        padding: 5vh 5vw;
+    }
+}
+
+@media screen and (min-width:769px) {
+    #AppBody {
+        padding: 5vh 10vw;
+    }
+}
+
+/***************************************************
+    #gantt-area > #chart-header, #chart-body, #crud-area
 ***************************************************/
 
 #gantt-area {
@@ -10,17 +41,29 @@
     flex-direction: column;
 }
 
+#chart-area{
+    padding:10px;
+}
+
 #chart-header {
     display: flex;
 }
 
-#chart-area {
+#chart-body {
     display: flex;
     border-top: 1px solid #bbb;
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
     /*position: relative;*/
 }
+
+#crud-area {
+    width: 300px;
+}
+
+/***************************************************
+    #chart-body > #member-area, #base-area
+***************************************************/
 
 #member-area {
     margin-top: 30px;
@@ -39,19 +82,8 @@
     overflow: hidden;
 }
 
-#task-area {
-    padding: 0;
-    margin-top: 30px;
-    color: #777;
-}
-
-#crud-area {
-    width: 300px;
-    border-bottom: 1px solid #ccc;
-}
-
 /***************************************************
-    #base-area > #scale, ul#data
+    #base-area > #scale, #timeline, #task-area
 ***************************************************/
 
 #scale {
@@ -80,6 +112,20 @@
     height: 100%;
 }
 
+#timeline {
+    position: absolute;
+    background-color: #00d0ff;
+    width: 2px;
+    height: 100%;
+    opacity: 0.5;
+}
+
+#task-area {
+    padding: 0;
+    margin-top: 30px;
+    color: #777;
+}
+
 #task-area li {
     line-height: 20px;
     height: 30px;
@@ -89,23 +135,15 @@
     white-space: nowrap;
 }
 
-#timeline {
-    position: absolute;
-    background-color: #00d0ff;
-    width: 2px;
-    height: 100%;
-    opacity: 0.5;
-}
-
-/***************************************************
-    ul.data > #nameXX-task > span.bubble, span.bubble-span
-***************************************************/
-
 #task-area span {
     position: absolute;
 }
 
-.bubble {
+/***************************************************
+    #task-area > li > ...
+***************************************************/
+
+#task-area .bubble {
     height: 15px;
     float: left;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
@@ -114,16 +152,61 @@
     background-color: #333;
 }
 
-.bubble-span {
+#task-area .bubble-span {
     bottom: 22px;
     left: -7px;
     font-size: 10px;
+}
+
+#task-area .bubble.break {
+    background-color: #2b8fef;
+}
+
+#task-area .bubble.receipt {
+    background-color: #13d604;
+}
+
+#task-area .bubble.answer {
+    background-color: #ffe74d;
+}
+
+#task-area .bubble.prianswer {
+    background-color: #8470ff;
+}
+
+#task-area .bubble.interview {
+    background-color: #ffc0cb;
+}
+
+#task-area .bubble.escalation {
+    background-color: #fc3232;
+}
+
+#task-area .bubble.other {
+    background-color: #a9a9a9;
+}
+
+#task-area .bubble:hover {
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
 }
 
 /***************************************************
     #crud-area > #display-area > .details-(header,title,body)
 ***************************************************/
 
+#crud-area form{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    
+}
+
+/*
 #display-area {
     font-size: 15px;
     border-radius: 2px;
@@ -132,12 +215,11 @@
 
 #display-area .details-header {
     color: white;
-    background-color: #00d0ff;
+    background: #00d0ff;
 }
 
 #display-area .details-title {
     padding: 5px 10px;
-    border-right: 2px solid #00d0ff;
 }
 
 #display-area .details-body {
@@ -164,60 +246,4 @@
     box-sizing: border-box;
     margin-left: auto;
 }
-
-/***************************************************
-    ul.data > #nameXX-task > span.bubble, span.bubble-span
-***************************************************/
-
-.data span {
-    position: absolute;
-}
-
-.bubble {
-    height: 15px;
-    float: left;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
-    border-radius: 3px;
-    opacity: 0.7;
-    background-color: #333;
-}
-
-.bubble-span {
-    bottom: 22px;
-    left: -7px;
-    font-size: 10px;
-}
-
-.bubble.break {
-    background-color: #2b8fef;
-}
-
-.bubble.receipt {
-    background-color: #13d604;
-}
-
-.bubble.answer {
-    background-color: #ffe74d;
-}
-
-.bubble.prianswer {
-    background-color: #8470ff;
-}
-
-.bubble.interview {
-    background-color: #ffc0cb;
-}
-
-.bubble.escalation {
-    background-color: #fc3232;
-}
-
-.bubble.other {
-    background-color: #a9a9a9;
-}
-
-.bubble:hover {
-    filter: alpha(opacity=30);
-    -moz-opacity: 0.5;
-    opacity: 0.5;
-}
+*/
